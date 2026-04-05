@@ -29,7 +29,7 @@ Patel Delivers needed their first data analyst to answer three questions:
 | 🔴 Rotterdam worst fail rate | 11.6% — 0.88pp above fleet average |
 | 💰 Amsterdam highest cost | €4,047 wasted despite lowest fail rate — volume drives impact |
 | 🏠 "Not home" dominates | 50.1% of all failures — consistent across every city |
-| 🌱 Vehicle type irrelevant | All four types fail between 10.4–11% — electrify freely |
+| 🌱 Vehicle type irrelevant | All four types fail between 10.4 – 11% — electrify freely |
 | 📍 3 Rotterdam postcodes | 3025, 3012, 3021 — no parcel lockers, highest priority |
 | 📈 38 zones deteriorating | 38 of 99 postcode zones worse than historical baseline |
 
@@ -53,22 +53,22 @@ Three recommendations, quantified at two scales:
 ## Dashboard Screenshots
 
 ### Home Page
-![Home Page](powerbi/screenshots/00_home_page.png)
+![Home Page](Screenshot/Home.png)
 
 ### Executive Overview
-![Executive Overview](powerbi/screenshots/01_executive_overview.png)
+![Executive Overview](Screenshot/Executive%20Overview.png) 
 
 ### Failure Analysis — 50.1% "Not Home" Finding
-![Failure Analysis](powerbi/screenshots/02_failure_analysis.png)
+![Failure Analysis](Screenshot/Failure%20Analysis.png)
 
 ### Carbon & Fleet — Vehicle Type Has Zero Impact on Fail Rate
-![Carbon Fleet](powerbi/screenshots/03_carbon_fleet.png)
+![Carbon Fleet](Screenshot/Carbon%20&%20Fleet.png)
 
 ### Postcode Heatmap — Rotterdam Priority Zones
-![Postcode Heatmap](powerbi/screenshots/04_postcode_heatmap.png)
+![Postcode Heatmap](Screenshot/Post%20Heatmap.png)
 
 ### Business Impact — €146M at PostNL Scale
-![Business Impact](powerbi/screenshots/05_business_impact.png)
+![Business Impact](Screenshot/Business%20Impact.png)
 
 ---
 
@@ -173,7 +173,7 @@ swiftroute-analytics/
 │   ├── Q5_business_impact.sql
 │   └── views_create.sql                ← All 5 views in one file
 ├── powerbi/
-│   ├── SwiftRoute_Dashboard.pbix
+│   ├── PatelDelivers_Dashboard.pbix
 │   └── screenshots/
 │       ├── 00_home_page.png
 │       ├── 01_executive_overview.png
@@ -182,7 +182,7 @@ swiftroute-analytics/
 │       ├── 04_postcode_heatmap.png
 │       └── 05_business_impact.png
 └── presentation/
-    └── SwiftRoute_BV_Analysis.pptx
+    └── PatelDelivers_BV_Analysis.pptx
 ```
 
 ---
@@ -198,7 +198,7 @@ swiftroute-analytics/
 **Step 1 — Create the database**
 ```sql
 CREATE DATABASE swiftroute;
-USE swiftroute;
+USE PatelDelivers;
 ```
 
 **Step 2 — Run the ETL pipeline**
